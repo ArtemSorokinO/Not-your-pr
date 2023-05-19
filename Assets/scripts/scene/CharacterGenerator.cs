@@ -11,8 +11,6 @@ public class CharacterGenerator : MonoBehaviour
 
     void Start()
     {
-        
-        
 
         foreach (GameObject i in charactersList)
         {
@@ -21,8 +19,8 @@ public class CharacterGenerator : MonoBehaviour
                 if (i.GetComponent<Player>().id == DataHolder.selectedCharacter)
                 {
                     Debug.Log(i.name);
-                    var play = Instantiate(i, Vector3.zero, Quaternion.identity);
-                    break;
+                    var player = Instantiate(i, Vector3.zero, Quaternion.identity);
+                    
                 }
             }
         }

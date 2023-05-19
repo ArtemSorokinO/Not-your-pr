@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 7792591838677776587}
   - component: {fileID: 2320884885958357863}
   - component: {fileID: 2037333989334906995}
+  - component: {fileID: 2826531759532642744}
   m_Layer: 0
   m_Name: chainsaw
   m_TagString: Player
@@ -216,8 +217,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
     type: 3}
-  playerSpeed: 10
+  playerHP: 0
   maxPlayerHP: 4
+  maxPlayerArmor: 0
   id: 2
 --- !u!70 &3369032821455123636
 CapsuleCollider2D:
@@ -232,8 +234,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.076121725, y: -0.031384278}
-  m_Size: {x: 0.16617814, y: 0.30893916}
+  m_Offset: {x: -0.076121725, y: -0.09406786}
+  m_Size: {x: 0.16617814, y: 0.22264718}
   m_Direction: 0
 --- !u!50 &7792591838677776587
 Rigidbody2D:
@@ -292,6 +294,27 @@ MonoBehaviour:
   offsetY: 2
   gmobject: {fileID: 2708634763660201491, guid: 0b23ba1d816355747af0b967bf01b355,
     type: 3}
+--- !u!114 &2826531759532642744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739175784854680348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6be1855669732846bfa4fe78b4659b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHP: 4
+  playerArmor: 4
+  playerSpeed: 10
+  attackDamage: 3
+  heavyAttackDamage: 0
+  maxMaxHP: 10
+  maxMaxSpeed: 10
+  maxMaxArmor: 10
+  maxMaxLuck: 10
 --- !u!1 &5026789330481251825
 GameObject:
   m_ObjectHideFlags: 0

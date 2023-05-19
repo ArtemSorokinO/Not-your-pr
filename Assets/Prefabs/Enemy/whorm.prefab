@@ -127,7 +127,8 @@ MonoBehaviour:
   enemySpeed: 6
   stoppingDistance: 4
   visionDistance: 10
-  player: {fileID: 0}
+  deltaX: 0
+  deltaY: 0
 --- !u!114 &822678058395812270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,8 +146,8 @@ MonoBehaviour:
   isAlive: 1
   enemySpeed: 6
   enemyCost: 5
-  enemyDropChance: 6
-  lootPrefab: {fileID: 6008616335474762080, guid: bbdf7619271bc2b4d957da9e8f34b691,
+  enemyDropChance: 100
+  lootPrefab: {fileID: 7930945112938747001, guid: 9f156a09a66074c4ea50d90f7d7d1d39,
     type: 3}
 --- !u!70 &5001540219648089904
 CapsuleCollider2D:

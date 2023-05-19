@@ -144,7 +144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -482,7 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71af70dae2f54aa448d1fd8902a5f7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countOfEnemyes: 1
+  minCountOfEnemyes: 3
+  maxCountOfEnemyes: 5
   enemyList:
   - {fileID: 6088641942088877559, guid: 3837c8a3c0b2d8a44b81ca22095abc95, type: 3}
 --- !u!1 &4257881800726427313
@@ -1226,6 +1227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 5063088676156345571, guid: 5e87fed7c9b55ab409c2a1d9b96dac32, type: 3}
+  minCount: 10
+  maxCount: 26
 --- !u!114 &4215589180333499400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,7 +1397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1478,7 +1481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1562,7 +1565,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1646,7 +1649,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1788,7 +1791,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1872,7 +1875,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1956,7 +1959,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2040,7 +2043,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2124,7 +2127,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2208,7 +2211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2292,7 +2295,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300030, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2376,7 +2379,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300034, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2460,7 +2463,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2544,7 +2547,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300118, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2628,7 +2631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300120, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2712,7 +2715,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2796,7 +2799,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2880,7 +2883,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2964,7 +2967,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3048,7 +3051,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3132,7 +3135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3216,7 +3219,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3300,7 +3303,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3384,7 +3387,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3468,7 +3471,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3552,7 +3555,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3636,7 +3639,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300086, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3720,7 +3723,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3804,7 +3807,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3888,7 +3891,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3972,7 +3975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300112, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4056,7 +4059,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4140,7 +4143,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300032, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4224,7 +4227,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300110, guid: 9f8f114589864b6489859a58fbb6baf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4556,7 +4559,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4723,7 +4726,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4929,7 +4932,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5099,7 +5102,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300042, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8240,7 +8243,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -8655,7 +8658,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -9550,7 +9553,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -10925,7 +10928,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -10991,6 +10994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -11580,7 +11588,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -13115,7 +13123,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -13181,6 +13189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -17130,7 +17143,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -17465,7 +17478,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -17531,6 +17544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -28680,7 +28698,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -28746,6 +28764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -28940,7 +28963,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -29275,7 +29298,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -29341,6 +29364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -30170,7 +30198,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -31945,7 +31973,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -37080,7 +37108,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -37146,6 +37174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -38215,7 +38248,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -38281,6 +38314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -40310,7 +40348,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -42485,7 +42523,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -44660,7 +44698,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -44726,6 +44764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -44835,7 +44878,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -46130,7 +46173,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -46196,6 +46239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -47515,7 +47563,7 @@ PrefabInstance:
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2057042991498122906, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -47596,6 +47644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TX Props Stone Cube (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717605752442942932, guid: 691752548bdfbda4f962651ddfabbc46,
         type: 3}
@@ -47790,7 +47843,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -48365,7 +48418,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -48540,7 +48593,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
@@ -49835,7 +49888,7 @@ PrefabInstance:
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508160130404252182, guid: 4b56d10098908714f8df34c23a6e1d26,
         type: 3}

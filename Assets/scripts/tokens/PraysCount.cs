@@ -11,7 +11,7 @@ public class PraysCount : MonoBehaviour
     [SerializeField]
     private Text scoreText;
 
-    private int currentScore = 0;
+    public int currentScore = 0;
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class PraysCount : MonoBehaviour
     void scoreChanged(int change)
     {
         currentScore += change;
-        scoreText.text = "Score: " + currentScore.ToString();
+        scoreText.text = currentScore.ToString();
     }
 
     void OnDisable()

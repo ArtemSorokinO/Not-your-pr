@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 8801137367861510010}
   - component: {fileID: 8801137367861509989}
   - component: {fileID: 8801137367861510009}
+  - component: {fileID: 2189312634154454944}
   - component: {fileID: 8801137367861509988}
   - component: {fileID: 8801137367861510008}
   - component: {fileID: 8801137367861509991}
@@ -195,9 +196,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 5551674366076498460, guid: efd01113a32876042992512f79d07178,
     type: 3}
-  playerSpeed: 6
-  maxPlayerHP: 5
+  playerHP: 0
+  maxPlayerHP: 0
+  maxPlayerArmor: 0
   id: 0
+--- !u!114 &2189312634154454944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801137367861509987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6be1855669732846bfa4fe78b4659b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHP: 6
+  playerArmor: 3
+  playerSpeed: 5
+  attackDamage: 1
+  heavyAttackDamage: 2
+  maxMaxHP: 10
+  maxMaxSpeed: 10
+  maxMaxArmor: 10
+  maxMaxLuck: 10
 --- !u!95 &8801137367861509988
 Animator:
   serializedVersion: 5
@@ -231,8 +254,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008290627, y: -0.13832356}
-  m_Size: {x: 0.27655187, y: 0.42196274}
+  m_Offset: {x: -0.008290627, y: -0.25565353}
+  m_Size: {x: 0.27655187, y: 0.33109325}
   m_Direction: 0
 --- !u!50 &8801137367861509991
 Rigidbody2D:

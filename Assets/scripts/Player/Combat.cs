@@ -15,10 +15,8 @@ public class Combat : MonoBehaviour
     private float attackRange = 0.5f;
     [SerializeField]
     private float attackrate = 2f;
-    [SerializeField]
-    private int attackDamage = 1;
-    [SerializeField]
-    private List<string> tags;
+    public int attackDamage = 1;
+    public List<string> tags;
 
 
     float nextAttackTime = 0f;
@@ -72,10 +70,8 @@ public class Combat : MonoBehaviour
     private float heavyAttackRange = 0.5f;
     [SerializeField]
     private float heavyAttackrate = 1f;
-    [SerializeField]
-    private int heavyAttackDamage = 2;
-    [SerializeField]
-    private List<string> heavyTags;
+    public int heavyAttackDamage = 2;
+    public List<string> heavyTags;
 
     //по нажатии кнопки запускается анимация тяжёлой тычки
     void HeavyAttack()

@@ -1,38 +1,90 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class hearts : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> Hearts;
-    
+    private List<GameObject> Hearts = new List<GameObject>();
+    [SerializeField]
+    private List<GameObject> emptyHearts = new List<GameObject>();
 
-    void Start()
+    private int maxMaxPlayerHP = 10;
+
+
+
+    void Awake()
     {
+        SetHP(10);
+        Player.toHertsSygnalSet += SetHP;
         Player.toHertsSygnal += ChangeHP;
+        Player.toHertsSygnalArmor += ChangeArmor;
+        
+    }
+
+    void OnDisable()
+    {
+        Player.toHertsSygnalSet -= SetHP;
+        Player.toHertsSygnal -= ChangeHP;
+        Player.toHertsSygnalArmor -= ChangeArmor;
+    }
+
+    void SetHP(int hp)
+    {
+        int i = 0;
+        foreach (var hrt in emptyHearts)
+        {
+            if (hp > i)
+            {
+                // эта шл€па null
+                
+                hrt.SetActive(true);
+            }
+            else
+            {
+                hrt.SetActive(false);
+            }
+            i++;
+        }
     }
 
 
     void ChangeHP(int Heart)
     {
-        int i = 0;
-        foreach (var hrt in Hearts) 
+        if (Heart <= maxMaxPlayerHP)
         {
-            if (Heart > i)
+            int i = 0;
+            foreach (var hrt in Hearts)
             {
-                Hearts[i].gameObject.SetActive(true);
-            } else
-            {
-                Hearts[i].gameObject.SetActive(false);
-            } 
-            i++;
+                if (Heart > i)
+                {
+                    hrt.SetActive(true);
+                }
+                else
+                {
+                    hrt.SetActive(false);
+                }
+                i++;
+            }
         }
     }
 
-    void OnDisable()
+    void ChangeArmor(int armor)
     {
-        Player.toHertsSygnal -= ChangeHP;
+        int i = 0;
+        foreach (var hrt in Hearts)
+        {
+            if (armor > i)
+            {
+                Hearts[i].gameObject.GetComponent<Image>().color = new Color(0, 0.7362874f, 1);
+            }
+            else
+            {
+                Hearts[i].gameObject.GetComponent<Image>().color = new Color(1, 1, 1);
+            }
+            i++;
+        }
     }
 }

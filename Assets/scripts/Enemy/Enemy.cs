@@ -8,8 +8,9 @@ using System.Threading;
 public class Enemy : MonoBehaviour
 {
     public Animator anim;
+    public bool isVincible = true;
     public int maxEnemyHP = 3;
-    private int EnemyHP;
+    public int EnemyHP;
     public bool isAlive = true;
     public int enemySpeed = 6;
 
@@ -57,19 +58,34 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage, List<string> tags)
     {
-        EnemyHP -= damage;
-        if (tags.Contains("fire"))
+        if (isVincible)
         {
-            //Fire();
+            EnemyHP -= damage;
+            if (tags.Contains("fire"))
+            {
+                //Fire();
+            }
+
+            anim.SetTrigger("pain");
+
+            if (EnemyHP <= 0)
+            {
+                Die();
+            }
         }
+
+    }
+
+    public void PureDamage(int damage, List<string> tags)
+    {
+        EnemyHP -= damage;
+
         anim.SetTrigger("pain");
 
-        if(EnemyHP <= 0)
+        if (EnemyHP <= 0)
         {
             Die();
         }
-
-        
     }
 
     
@@ -79,13 +95,14 @@ public class Enemy : MonoBehaviour
         isAlive = false;
         anim.SetBool("isAlive", false);
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<CircleCollider2D>().enabled = false;
-        this.enabled = false;
+        var timed = GetComponent<CircleCollider2D>();
+        if (timed != null) timed.enabled = false;
         if(UnityEngine.Random.Range(0,101) <= enemyDropChance) 
         { 
             Instantiate(lootPrefab, gameObject.transform.position, Quaternion.identity); 
         }
         scoreChange?.Invoke(enemyCost);
+        this.enabled = false;
     }
 
     private void Flip()

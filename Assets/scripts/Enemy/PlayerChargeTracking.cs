@@ -84,7 +84,7 @@ public class PlayerChargeTracking : MonoBehaviour
     {
         if (collision.gameObject.tag != "Player")
         {
-            Debug.Log("Enemy collisioned with zabor or enother mob");
+            //Debug.Log("Enemy collisioned with zabor or enother mob");
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
             movement = direction;

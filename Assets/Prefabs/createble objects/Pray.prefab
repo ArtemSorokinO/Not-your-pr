@@ -185,7 +185,8 @@ MonoBehaviour:
   enemySpeed: 6
   stoppingDistance: 0
   visionDistance: 10
-  player: {fileID: 0}
+  deltaX: 0
+  deltaY: -0.5
 --- !u!50 &3780469732717884088
 Rigidbody2D:
   serializedVersion: 4

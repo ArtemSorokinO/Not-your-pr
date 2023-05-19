@@ -12,6 +12,11 @@ TagManager:
   - rooms
   - bonus
   - Joystick
+  - UIManager
+  - Manager
+  - BossSpawner
+  - DoorToSecret
+  - LevelMusic
   layers:
   - Default
   - TransparentFX

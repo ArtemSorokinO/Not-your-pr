@@ -11,6 +11,10 @@ public class PlayerTracking : MonoBehaviour
     [SerializeField]
     private float visionDistance = 10;
     [SerializeField]
+    private float deltaX = 0;
+    [SerializeField]
+    private float deltaY = 0;
+
     private Transform player;
     private Animator anim;
     private Rigidbody2D rb;
@@ -48,7 +52,7 @@ public class PlayerTracking : MonoBehaviour
 
     void moveTarget()
     {
-        Vector3 direction = player.position - transform.position;
+        Vector3 direction = player.position - transform.position + new Vector3(deltaX, deltaY);
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         direction.Normalize();
         movement = direction;

@@ -19,6 +19,11 @@ public class AttackPointProjectileAttack : MonoBehaviour
         SetTarget();
     }
 
+    void OnDisable()
+    {
+        Player.apperOfPlayer -= SetTarget;
+    }
+
     void SetTarget()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Transform>();
@@ -31,6 +36,7 @@ public class AttackPointProjectileAttack : MonoBehaviour
             nextTimeAttack = Time.time + 1f / ((Random.Range(attackRateMin, attackRateMax) / 10));
             anim.SetTrigger("attack");
         }
+        else if (!anim.GetBool("isAlive")) Destroy(this);
     }
 
     void Attack()

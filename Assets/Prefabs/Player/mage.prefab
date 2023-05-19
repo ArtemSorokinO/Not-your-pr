@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 405831418325141178}
   - component: {fileID: 8531252095518456029}
   - component: {fileID: 545802913307046869}
+  - component: {fileID: 8657158201421927058}
   m_Layer: 0
   m_Name: mage
   m_TagString: Player
@@ -269,8 +270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
     type: 3}
-  playerSpeed: 4
+  playerHP: 0
   maxPlayerHP: 8
+  maxPlayerArmor: 0
   id: 3
 --- !u!50 &405831418325141178
 Rigidbody2D:
@@ -306,8 +308,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001202935, y: -0.005835174}
-  m_Size: {x: 0.059561253, y: 0.13137782}
+  m_Offset: {x: 0.001202935, y: -0.029053776}
+  m_Size: {x: 0.059561253, y: 0.11426938}
   m_Direction: 0
 --- !u!114 &545802913307046869
 MonoBehaviour:
@@ -325,6 +327,27 @@ MonoBehaviour:
   offsetY: 2
   gmobject: {fileID: 2708634763660201491, guid: 0b23ba1d816355747af0b967bf01b355,
     type: 3}
+--- !u!114 &8657158201421927058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652089083918932301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6be1855669732846bfa4fe78b4659b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHP: 8
+  playerArmor: 4
+  playerSpeed: 4
+  attackDamage: 1
+  heavyAttackDamage: 2
+  maxMaxHP: 10
+  maxMaxSpeed: 10
+  maxMaxArmor: 10
+  maxMaxLuck: 10
 --- !u!1001 &5714325568025400393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +491,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464497929771776, guid: 9e4577abe56a95f4a91d29a0473cd30c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198159274938206214, guid: 9e4577abe56a95f4a91d29a0473cd30c,
+        type: 3}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198159274938206214, guid: 9e4577abe56a95f4a91d29a0473cd30c,
+        type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198159274938206214, guid: 9e4577abe56a95f4a91d29a0473cd30c,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198159274938206214, guid: 9e4577abe56a95f4a91d29a0473cd30c,
+        type: 3}
+      propertyPath: SizeBySpeedModule.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199139393137530034, guid: 9e4577abe56a95f4a91d29a0473cd30c,

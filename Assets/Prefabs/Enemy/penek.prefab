@@ -121,7 +121,9 @@ MonoBehaviour:
   anim: {fileID: 6994972881411462046}
   maxEnemyHP: 3
   isAlive: 1
+  enemySpeed: 6
   enemyCost: 3
+  enemyDropChance: 6
   lootPrefab: {fileID: 6008616335474762080, guid: bbdf7619271bc2b4d957da9e8f34b691,
     type: 3}
 --- !u!50 &1034360925557377058
@@ -137,7 +139,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.74
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

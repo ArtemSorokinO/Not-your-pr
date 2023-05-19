@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class Wishing : MonoBehaviour
 {
-    public GameObject anim;
-    public GameObject button;
+    [SerializeField]
+    private GameObject anim;
+    [SerializeField]
+    private List<GameObject> buttons;
+
 
 
     
@@ -16,7 +19,10 @@ public class Wishing : MonoBehaviour
         {
             DataHolder.countOfPrays--;
             anim.SetActive(true);
-            button.SetActive(false);
+            foreach (GameObject i in buttons)
+            {
+                i.SetActive(false);
+            }
             Invoke("onWished", 5.5f);
         }
     }
@@ -43,6 +49,9 @@ public class Wishing : MonoBehaviour
             if (!DataHolder.characterList.Contains("mage")) DataHolder.characterList.Add("mage");
         }
         anim.SetActive(false);
-        button.SetActive(true);
+        foreach (GameObject i in buttons)
+        {
+            i.SetActive(true);
+        }
     }
 }

@@ -23,7 +23,6 @@ public class VerticalRay : MonoBehaviour
     {
         if (canDamage && collider.gameObject.tag == "Player")
         {
-            Debug.Log("Collisioned by ray");
             GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>().changeHP(rayDamage);
             canDamage = false;
         }

@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 843678734991761668}
   - component: {fileID: 7552919903530432433}
   - component: {fileID: 7337374867070117724}
+  - component: {fileID: 1738320208796411034}
   m_Layer: 0
   m_Name: flameKnight
   m_TagString: Player
@@ -178,7 +179,7 @@ Transform:
   m_GameObject: {fileID: 7021478456332980320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1824145, y: 2.1824145, z: 2.1824145}
+  m_LocalScale: {x: 2.182415, y: 2.182415, z: 2.182415}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8983169005357411403}
@@ -252,8 +253,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06864096, y: -0.18187757}
-  m_Size: {x: 0.31826124, y: 0.62130034}
+  m_Offset: {x: 0.06864096, y: -0.30782336}
+  m_Size: {x: 0.31826124, y: 0.36940894}
   m_Direction: 0
 --- !u!114 &5490715938209673382
 MonoBehaviour:
@@ -269,8 +270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
     type: 3}
-  playerSpeed: 8
+  playerHP: 0
   maxPlayerHP: 5
+  maxPlayerArmor: 0
   id: 1
 --- !u!95 &3899229885774848314
 Animator:
@@ -355,3 +357,24 @@ MonoBehaviour:
   offsetY: 2
   gmobject: {fileID: 2708634763660201491, guid: 0b23ba1d816355747af0b967bf01b355,
     type: 3}
+--- !u!114 &1738320208796411034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021478456332980320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6be1855669732846bfa4fe78b4659b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHP: 8
+  playerArmor: 4
+  playerSpeed: 5
+  attackDamage: 1
+  heavyAttackDamage: 2
+  maxMaxHP: 10
+  maxMaxSpeed: 10
+  maxMaxArmor: 10
+  maxMaxLuck: 10
