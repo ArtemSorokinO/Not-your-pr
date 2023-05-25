@@ -14,13 +14,11 @@ public class Merchant : MonoBehaviour
     private int nowSelling = 0;
     private Action[] allSelling = {SellEstus, SellKey, SellExplosion};
     public int[] howManyHowMuch = {20, 50, 20};
-    private PraysCount souls;
 
     void Awake()
     {
         BuyButton.SellCurrent += SellCurrent;
         BuyButton.RefreshCurrent += ChangeCurrent;
-        souls = GameObject.FindGameObjectWithTag("UIManager").GetComponent<PraysCount>();
     }
 
     void OnDisable()
@@ -39,9 +37,11 @@ public class Merchant : MonoBehaviour
 
     private void SellCurrent()
     {
-        if (souls.currentScore >= howManyHowMuch[nowSelling])
+        var mngr = GameObject.FindGameObjectWithTag("UIManager");
+        if (mngr.GetComponent<PraysCount>().currentScore >= howManyHowMuch[nowSelling] && !mngr.GetComponent<InventoryManager>().IsFull())
         {
-            Enemy.scoreChange.Invoke(howManyHowMuch[nowSelling]);
+            
+            Enemy.scoreChange.Invoke(-howManyHowMuch[nowSelling]);
             allSelling[nowSelling].Invoke();
             gameObject.GetComponent<Animator>().SetTrigger("sale");
         }
